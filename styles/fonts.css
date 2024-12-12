@@ -1,0 +1,18 @@
+.garamond-normal{
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.garamond-itallic {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.garamond-semibold {
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+

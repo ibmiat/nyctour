@@ -1,0 +1,203 @@
+.agenda-date-link a {
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-weight: 500; /* Light weight */
+    text-decoration: none;  /* Remove underline */
+    cursor: pointer;  /* Show a pointer cursor on hover */
+    color: black;
+    display: block;  /* Make it a block element */
+    margin-bottom: 10px;  /* Add margin to the bottom */
+}
+
+.agenda-padding-bottom{ 
+    padding-bottom: 16px;
+}
+
+.agenda-details-header{
+    width: 100vw;
+    padding-top: 15vh;
+    padding-bottom: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    letter-spacing: 0.3px;
+    font-weight: 400; /* semi weight */
+}
+
+.agenda-image {
+    width: 100vw; /* Full screen width */
+    height: 24vh; /* Set height to 24% of the viewport height */
+    background-color: pink; /* Optional placeholder color */
+    margin-bottom: 18px; /* Spacing below the image area */
+    overflow: hidden; /* Hide parts of the image that exceed the height */
+}
+
+.agenda-image img {
+    width: 100%; /* Ensure the image spans the full width of the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Removes extra spacing below the image */
+}
+
+
+.calendar-link {
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-weight: 300; /* Light weight */
+    letter-spacing: 0.2px;
+    color: inherit; /* Inherit the color from parent unless overridden */
+    font-family: 'Public Sans', sans-serif; /* Optional: Set a specific font */
+    font-size: 14px;
+    color: #5C5C5C;
+}
+
+.calendar-link:visited {
+    color: #5C5C5C; /* Change color to pink after the link is visited */
+}
+
+.calendar-link:active {
+    color: #5C5C5C; /* Change color to pink when the link is active (being clicked) */
+}
+
+.add-to-cal{
+    padding-top: 8px;
+}
+
+.agenda-desc{
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    color: black;
+    font-weight: 200;
+    line-height: 26px;
+    width: 80%;
+}
+
+.agenda-date-time-section {
+    font-family: 'Public Sans', sans-serif; /* Set the desired font */
+    display: flex;
+    align-items: center; /* Align text vertically */
+    font-size: 14px; /* Adjust font size to match the design */ 
+}
+
+
+.margin-bottom-12{
+    margin-bottom: 12px;
+}
+
+.agenda-date-time-section .number {
+    font-weight: 700; /* Bold for "01" */
+    margin-right: 8px; /* Spacing between number and divider */
+}
+
+.agenda-date-time-section .number2 {
+    font-weight: 400; /* Bold for "01" */
+    margin-right: 8px; /* Spacing between number and divider */
+}
+
+
+.agenda-date-time-section .divider {
+    font-weight: 200; /* Light font for the "|" */
+    margin-right: 8px; /* Spacing between divider and brand name */
+}
+
+.agenda-date-time-section .brand {
+    font-weight: 200; /* Light font for "Glossier" */
+    color: #5C5C5C;
+}
+
+.free-line-spacing{
+    padding-left: 24px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.agenda-catalog-item{
+    border-bottom: 0.5px solid #B5B5B5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.agenda-top-border {
+    border-top: 0.5px solid #B5B5B5;
+}
+
+.agenda-cat-details {
+    float: left;
+    width: calc(100% - 18px);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+.agenda-date-theme{
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    color: #5C5C5C;
+}  
+
+.prev-day-style{
+    color: #979797;
+}
+
+/* Italicize 'Next day' */
+.next-day-text {
+    font-style: italic;
+}
+
+/* Style the arrow image */
+.next-day-link .arrow {
+    display: inline-block; /* Aligns the arrow with the text */
+    margin-left: 8px; /* Add space between 'Next day' text and the arrow */
+    vertical-align: middle; /* Ensures the arrow aligns with the text */
+}
+
+.next-day-link .arrow-img {
+    width: 1em; /* Adjust the size of the SVG based on font size */
+    height: auto; /* Maintain aspect ratio of the SVG */
+    vertical-align: middle; /* Align vertically with text */
+}
+
+
+
+
+/* Style for the clickable link */
+/* Style for the chevron link */
+.chevron-link {
+    display: inline-block; /* Ensures it wraps only around the icon */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensures it inherits the parent styles */
+}
+
+.back-chevron-icon {
+    width: 16px; /* Matches the intended size relative to text */
+    height: auto; /* Maintains aspect ratio of the SVG */
+    display: inline-block; /* Ensures proper alignment */
+    vertical-align: middle; /* Aligns it with the text if needed */
+    padding-bottom: 3.5px;
+}
+
+/* Existing styles */
+.agenda-header-area {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Ensures vertical alignment */
+    padding-top: 15vh;
+    padding-bottom: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
+    gap: 8px; /* Spacing between the icon and text */
+}
+
+.agenda-details-title {
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif; /* Consistent font */
+    letter-spacing: 0.3px;
+    font-weight: 400; /* Semi-weight */
+    color: black;
+    line-height: 1; /* Avoids extra vertical spacing */
+}
+

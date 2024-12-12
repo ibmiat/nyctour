@@ -1,0 +1,312 @@
+/* Reset styles */
+body, h1, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body {
+    opacity: 0; /* Start fully transparent */
+    transition: opacity 0.6s ease-in-out; /* Smooth transition */
+}
+
+body.fade-in {
+    opacity: 1; /* Fully visible */
+}
+
+body.fade-out {
+    opacity: 0; /* Fade out on navigation */
+}
+
+
+/* Fixed header navigation */
+.header-navigation {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left edge */
+    width: 100vw; /* Full width */
+    height: 68px;
+    padding: 24px 16px 14px 6px; /* top, right, bottom, left */
+    /*border-bottom: 1px solid #CFCFCF; Adjust the thickness (2px) as needed */
+    z-index: 999; /* Ensure it stays on top of other content */
+}
+
+.header-navigation-light{
+    background-color: white;
+}
+
+.header-navigation-dark{
+    background-color: black;
+    color: white;
+}
+  
+  
+#menu-button {
+    background-color: white;
+    color: #2B2C2B;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.logoIC{
+    text-align: right;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.landing-link {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.landing-link-menu {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700; /* Bold weight */
+    color: white;
+    text-decoration: none;
+}
+
+.landing-link:visited {
+    font-family: 'Public Sans', sans-serif;
+    color: inherit;
+}
+
+.landing-link:hover {
+    color: inherit;            
+    text-decoration: none;     
+}
+
+.landing-link:focus {
+    outline: none;
+}
+
+
+/*Columns*/
+* {
+    box-sizing: border-box;
+}
+
+.column50 {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  
+#full-screen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    z-index: 100000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    padding-top: 78px;
+}
+
+.menu-header-area {
+    width: 100vw;
+    text-align: center;
+    padding-top: 14vh;
+    padding-bottom: 14vh;
+    font-size: 18px;
+    color: white;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-weight: 300; /* Light weight */
+    letter-spacing: 0.25;
+}
+
+  
+  #full-screen-menu.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #full-screen-menu.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .menu-content h1 {
+    margin-bottom: 20px;
+  }
+  
+  .menu-content ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .menu-content ul li {
+    margin: -1px 0;
+  }
+  
+  .menu-content ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+.menu-content ul li a:hover {
+    color: gray;
+}
+
+.menu-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 0.5px solid #B2B2B2; /* Bottom border */
+    font-size: 14px;
+    color: #404241;
+    letter-spacing: 0.9px;
+    word-spacing:4px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300; /* Light weight */
+}
+
+.menu-top-border{
+    border-top: 0.5px solid #B2B2B2;  /* Top border */
+}
+
+  
+#close-button {
+    background-color: black;
+    color: white;
+    padding: 4px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.agenda-content{
+    width: 100vw;
+}
+
+.content-header{
+    width: 100vw;
+    padding-top: 15vh;
+    padding-bottom: 8vh;
+    color: black;
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    letter-spacing: 0.3px;
+    font-weight: 400; /* semi weight */
+    text-align: center;
+}
+
+.agenda-item{
+    float: left;
+    width: 100vw;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+}
+
+h3{
+    font-family: 'Noto Serif JP', 'Hiragino Mincho ProN', serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.time{
+    color: rgba(0, 0, 0, 1);
+}
+
+.agenda-event{
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-weight: 500; /* Light weight */
+    letter-spacing: 2%;
+    color: rgba(0, 0, 0, 0.75);
+    padding-bottom: 10px;
+    letter-spacing: 0.25px;
+}
+
+.agenda-location {
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-weight: 300; /* Light weight */
+    letter-spacing: 2%;
+    color: rgba(0, 0, 0, 0.75);
+    font-style: italic; /* Make the text italic */
+    padding-bottom: 18px;
+    letter-spacing: 0.25px;
+}
+
+
+
+
+.map-content{
+    width: 100vw;
+    /*background-color: pink;*/
+    padding-bottom: 64px; 
+}
+
+.top-padding-8{
+    padding-top: 8px;
+}
+
+
+.landing-content{
+    width: 100vw;
+    padding-top: 13vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-title {
+    max-width: 80vw; /* or set a specific width, e.g., 300px */
+    overflow-wrap: break-word; /* Ensure text wraps if it overflows */
+}
+  
+.nrf-guide {
+    font-family: "Adobe Garamond Pro", serif; /* Font for this section */
+    font-size: 56px;
+    line-height: 64px;
+}
+  
+.nrf-italic {
+    font-style: italic; /* Make only NRF italic */
+}
+  
+.nyc-25 {
+    font-family: "Public Sans", sans-serif; /* Font for this section */
+    margin-left: 4px; /* Add spacing if needed */
+    font-size: 24px;
+    font-weight: 200; /* Light weight */
+}
+
+.home-image {
+  margin-top: 8px;
+  width: 100%;
+  background-color: plum;
+  border-radius: 4px;
+  overflow: hidden; /* Ensures the rounded corners apply to the image too */
+}
+
+.home-image img {
+  width: 100%; /* Make image take up full width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space under the image */
+}
+
+  

@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+.store-catalog-item{
+    border-bottom: 0.5px solid #B5B5B5;
+    padding: 22px 12px 22px 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.store-top-border {
+    border-top: 0.5px solid #B5B5B5;
+}
+
+.store-cat-number {
+    float: left;
+    width: 24px;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-weight: 500; /* semi weight */
+    text-align: left;
+    padding-top: 3px;
+}
+
+.store-cat-details {
+  float: left;
+  width: calc(100% - 24px - 18px);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.cat-store-name a {
+    font-size: 22px;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    font-weight: 700; /* Light weight */
+    text-decoration: none;  /* Remove underline */
+    cursor: pointer;  /* Show a pointer cursor on hover */
+    color: black;
+    display: block;  /* Make it a block element */
+    margin-bottom: 10px;  /* Add margin to the bottom */
+}
+
+.cat-store-theme{
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    color: #515151;
+    width: 85%;
+}
+
+.store-arrow-area {
+    float: left;
+    width: 18px;
+}
+
+.store-arrow {
+    width: 18px;
+    height: 18px;
+    background: url('../SVG/diagonal-arrow.svg') no-repeat center center;
+    background-size: contain; /* Ensures the SVG fits within the box */
+}
+
+.right-arrow {
+    width: 18px;
+    height: 18px;
+    background: url('../SVG/arrow--right.svg') no-repeat center center;
+    background-size: contain; /* Ensures the SVG fits within the box */
+}
+
+.catalogue-title-section {
+    font-family: 'Public Sans', sans-serif; /* Set the desired font */
+    display: flex;
+    align-items: center; /* Align text vertically */
+    font-size: 20px; /* Adjust font size to match the design */ 
+}
+
+.catalogue-title-section .number {
+    font-weight: 700; /* Bold for "01" */
+    margin-right: 8px; /* Spacing between number and divider */
+}
+
+.catalogue-title-section .number2 {
+    font-weight: 400; /* Bold for "01" */
+    margin-right: 8px; /* Spacing between number and divider */
+}
+
+
+.catalogue-title-section .divider {
+    font-weight: 200; /* Light font for the "|" */
+    margin-right: 8px; /* Spacing between divider and brand name */
+}
+
+.catalogue-title-section .brand {
+    font-weight: 200; /* Light font for "Glossier" */
+}
+
+.margin-bottom-16{
+    margin-bottom: 16px;
+}
+
+.catalogue-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the text color from the parent */
+    display: block; /* Make the link act as a block-level element */
+}
+
+.catalogue-link:visited, 
+.catalogue-link:active {
+    color: inherit; /* Keep color consistent */
+}
+
+.catalogue-link:hover {
+    text-decoration: none; /* Prevent underline on hover */
+}

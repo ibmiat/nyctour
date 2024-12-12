@@ -1,0 +1,161 @@
+.detail-content-header{
+    width: 100vw;
+    padding-top: 14vh;
+    padding-right: 16px;
+    padding-left: 16px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
+    letter-spacing: 0.3px;
+    font-weight: 400; /* semi weight */
+    text-align: justify;
+}
+
+.detail-no {
+  float: left;
+  width: 29px;
+  border-right: 1px solid;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.detail-store {
+  float: left;
+  width: 50%;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  font-weight: 200; /* Extra Light weight */
+}
+
+/* styles.css */
+.styled-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 200; /* Extra Light weight */
+}
+
+.styled-link:hover {
+  color: black;
+  transform: scale(1.05);    /* Slight zoom effect */
+  font-weight: 300; /* Light weight */
+}
+
+.styled-link:active {
+  color: black;
+  transform: scale(0.95);    /* Pressed effect */
+  font-weight: 300; /* Light weight */
+}
+
+.link-area{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.details-header-area{
+    font-size: 28px;
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-right: 16px;
+    padding-bottom: 28px;
+    font-weight: 200; /* Light weight */
+    line-height: 38px;
+}
+
+/* Container for the tags */
+.tag-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new line */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    gap: 12px; /* Adds space between the tags */
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  
+  /* Individual tags */
+  .tag {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap; /* Ensures the text inside each tag stays on one line */
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  /* Hover effect */
+  .tag:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Ensure the image fits the full width of the screen */
+.responsive-image {
+    width: 100%; /* Image width will be 100% of the container's width (the screen) */
+    height: auto; /* Height will adjust to maintain the aspect ratio */
+    display: block; /* Prevents any space below the image */
+    object-fit: cover; /* Ensures the image covers the full width */
+}
+
+/* Optional: You can also set the container to ensure no other margins are affecting the layout */
+.image-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 24px;
+    margin-top: 28px;
+}
+
+
+.details-content{
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Create two equal columns that float next to each other */
+.back-col {
+    float: left;
+    width: 50%;
+  }
+
+  .back-col-full {
+    float: left;
+    width: 100%;
+  }
+
+  .next-col {
+    float: left;
+    text-align: right;
+    width: 50%;
+  }
+
+  .next-col-full {
+    float: left;
+    text-align: right;
+    width: 100%;
+  }
+
+  .nav-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    font-weight: 300; /* Light weight */
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    z-index: 1000; /* Ensure the footer is always above other content */
+  }
+  
+  

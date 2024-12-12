@@ -1,0 +1,10 @@
+.primary-button {
+    background-color: black;
+    color: white;
+}
+
+.secondary-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
