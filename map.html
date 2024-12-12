@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/agenda.css">
+    <link rel="stylesheet" href="styles/mapstyle.css">
+    <link rel="stylesheet" href="styles/catalogue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/eqh2gad.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Map</title>
+</head>
+<body>
+
+    <div class="map-area">
+
+        <!--Header-->
+        <div class="header-navigation header-navigation-light">
+            <div class="row">
+                <div class="column50">
+                    <button id="menu-button">Menu</button>
+                </div>
+                <div class="logoIC column50">
+                    <a class="landing-link" href="index.html">NYC Safari</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Menu Content-->
+        <div id="full-screen-menu" class="hidden">
+            <div class="menu-content">
+                <div class="header-navigation header-navigation-dark">
+                    <div class="row">
+                        <div class="column50">
+                            <button id="close-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="logoIC column50">
+                            <a class="landing-link-menu" href="index.html">NYC Safari</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-header-area">MENU</div>
+                <ul>
+                    <li class="menu-item menu-top-border"><a href="Agenda/agenda.html">AGENDA</a></li>
+                    <li class="menu-item"><a href="map.html">MAP</a></li>
+                    <li class="menu-item"><a href="catalogue.html">STORE CATALOGUE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Body Content-->
+            <div class="content-header">MAP</div>
+
+            <!-- Map container-->
+            <div id="map" class="map-container"></div>
+
+            <!-- Store Pop Up: Store 1 -->
+            <div class="popup" id="popup1">
+                <div class="row">
+                    <div class="store-map-details">
+                        <!-- Store name -->
+                        <div class="cat-store-name">
+                            <a href="Stores/store1.html" class="catalogue-link">
+                                <div class="catalogue-title-section margin-bottom-8">
+                                    <span class="number">01</span> 
+                                    <span class="divider">|</span> 
+                                    <span class="brand">Store Name 1</span>
+                                </div>
+                            </a>  
+                        </div>
+                        <!-- Article quote -->
+                        <div class="cat-store-theme garamond-normal padding-top-8">
+                            App driven, Service based, Technology App driven, Service based, Technology App driven, Service based, Technology
+                        </div>
+                    </div>
+                    <div class="store-arrow-area">
+                        <!-- Clickable Arrow -->
+                        <button id="closeButton1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-directional-container">
+                    <a href="https://www.example.com" target="_blank" class="directional-button secondary-button dir-link">
+                        Get directions
+                    </a>
+                    <a href="Stores/store1.html" class="directional-button primary-button dir-link">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+            <!-- Store Pop Up: Store 2 -->
+            <div class="popup" id="popup2">
+                <div class="row">
+                    <div class="store-map-details">
+                        <!-- Store name -->
+                        <div class="cat-store-name">
+                            <a href="Stores/store1.html" class="catalogue-link">
+                                <div class="catalogue-title-section margin-bottom-8">
+                                    <span class="number">02</span> 
+                                    <span class="divider">|</span> 
+                                    <span class="brand">Store Name 2</span>
+                                </div>
+                            </a>  
+                        </div>
+                        <!-- Article quote -->
+                        <div class="cat-store-theme garamond-normal padding-top-8">
+                            App driven, Service based, Technology App driven, Service based, Technology App driven, Service based, Technology
+                        </div>
+                    </div>
+                    <div class="store-arrow-area">
+                        <!-- Clickable Arrow -->
+                        <button id="closeButton2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-directional-container">
+                    <a href="https://www.example.com" target="_blank" class="directional-button secondary-button dir-link">
+                        Get directions
+                    </a>
+                    <a href="Stores/store1.html" class="directional-button primary-button dir-link">
+                        Read more
+                    </a>
+                </div>
+            </div>
+            
+
+            <!-- Store Pop Up: Store 3 -->
+            <div class="popup" id="popup3">
+                <div class="row">
+                    <div class="store-map-details">
+                        <!-- Store name -->
+                        <div class="cat-store-name">
+                            <a href="Stores/store1.html" class="catalogue-link">
+                                <div class="catalogue-title-section margin-bottom-8">
+                                    <span class="number">03</span> 
+                                    <span class="divider">|</span> 
+                                    <span class="brand">Store Name 3</span>
+                                </div>
+                            </a>  
+                        </div>
+                        <!-- Article quote -->
+                        <div class="cat-store-theme garamond-normal padding-top-8">
+                            App driven, Service based, Technology App driven, Service based, Technology App driven, Service based, Technology
+                        </div>
+                    </div>
+                    <div class="store-arrow-area">
+                        <!-- Clickable Arrow -->
+                        <button id="closeButton3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="button-directional-container">
+                    <a href="https://www.example.com" target="_blank" class="directional-button secondary-button dir-link">
+                        Get directions
+                    </a>
+                    <a href="Stores/store1.html" class="directional-button primary-button dir-link">
+                        Read more
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Map interaction -->
+            <script>
+                // Initialize the map with a styled tile layer
+                const map = new ol.Map({
+                    target: 'map',
+                    layers: [
+                        new ol.layer.Tile({
+                        source: new ol.source.XYZ({
+                            url: 'https://{a-d}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', // CartoDB Light
+                            attributions: 'Map tiles by <a href="https://carto.com/" target="_blank">CartoDB</a>, under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>. Data by <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors.'
+                        }),
+                        }),
+                    ],
+                    view: new ol.View({
+                        center: ol.proj.fromLonLat([-74.006, 40.7128]), // Center on New York City
+                        zoom: 12, // Set zoom level for a city view
+                    }),
+                });
+
+                // Add markers
+                const markers = [
+                { lon: -73.9654, lat: 40.7851, icon: 'SVG/marker1.svg', name: 'Central Park' },
+                { lon: -73.9772, lat: 40.7527, icon: 'SVG/marker1.svg', name: 'Times Square' },
+                { lon: -73.9542, lat: 40.7788, icon: 'SVG/marker1.svg', name: 'Ulta Beauty' },
+                ];
+
+                // Create features for each marker
+                const features = markers.map(marker => {
+                const feature = new ol.Feature({
+                    geometry: new ol.geom.Point(ol.proj.fromLonLat([marker.lon, marker.lat])),
+                });
+
+                const markerStyle = new ol.style.Style({
+                    image: new ol.style.Icon({
+                    anchor: [0.5, 1],
+                    src: marker.icon,
+                    }),
+                });
+
+                feature.setStyle(markerStyle);
+                return feature;
+                });
+
+                // Create vector layer
+                const vectorLayer = new ol.layer.Vector({
+                source: new ol.source.Vector({
+                    features: features,
+                }),
+                });
+
+                // Add vector layer to the map
+                map.addLayer(vectorLayer);
+
+                // Ensure the view fits all markers
+                const extent = vectorLayer.getSource().getExtent();
+                map.getView().fit(extent, {
+                padding: [40, 40, 40, 40],
+                maxZoom: 12,
+                });
+
+                // Function to close all popups
+                function closeAllPopups() {
+                document.getElementById('popup1').style.display = 'none';
+                document.getElementById('popup2').style.display = 'none';
+                document.getElementById('popup3').style.display = 'none';
+                }
+
+                // Add click event for showing the popup when clicking a marker
+                map.on('singleclick', function (event) {
+                const feature = map.forEachFeatureAtPixel(event.pixel, function (feature) {
+                    return feature;
+                });
+
+                // Close all popups initially
+                closeAllPopups();
+
+                if (feature) {
+                    const coordinate = feature.getGeometry().getCoordinates();
+                    const clickedMarker = markers.find(marker => {
+                    const markerCoords = ol.proj.toLonLat(coordinate);
+                    return (
+                        Math.abs(markerCoords[0] - marker.lon) < 0.0001 &&
+                        Math.abs(markerCoords[1] - marker.lat) < 0.0001
+                    );
+                    });
+
+                    if (clickedMarker && clickedMarker.name === 'Central Park') {
+                    const popupElement = document.getElementById('popup1');
+                    popupElement.style.display = 'block';
+                    }
+
+                    if (clickedMarker && clickedMarker.name === 'Times Square') {
+                    const popupElement = document.getElementById('popup2');
+                    popupElement.style.display = 'block';
+                    }
+
+                    if (clickedMarker && clickedMarker.name === 'Ulta Beauty') {
+                    const popupElement = document.getElementById('popup3');
+                    popupElement.style.display = 'block';
+                    }
+                }
+                });
+
+                // Close button functionality
+                document.getElementById('closeButton1').onclick = function () {
+                    document.getElementById('popup1').style.display = 'none';
+                };
+                document.getElementById('closeButton2').onclick = function () {
+                    document.getElementById('popup2').style.display = 'none';
+                };
+                document.getElementById('closeButton3').onclick = function () {
+                    document.getElementById('popup3').style.display = 'none';
+                };
+            </script>
+
+
+
+            <!--end of body content-->
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
