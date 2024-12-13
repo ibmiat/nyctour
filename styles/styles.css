@@ -276,6 +276,7 @@ h3{
 .home-title {
     max-width: 80vw; /* or set a specific width, e.g., 300px */
     overflow-wrap: break-word; /* Ensure text wraps if it overflows */
+    padding-bottom: 24px;
 }
   
 .nrf-guide {
@@ -291,22 +292,80 @@ h3{
 .nyc-25 {
     font-family: "Public Sans", sans-serif; /* Font for this section */
     margin-left: 4px; /* Add spacing if needed */
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200; /* Light weight */
 }
 
-.home-image {
-  margin-top: 8px;
-  width: 100%;
-  background-color: plum;
-  border-radius: 4px;
-  overflow: hidden; /* Ensures the rounded corners apply to the image too */
+.welcomeMS {
+    font-family: "Public Sans", sans-serif; /* Font for this section */
+    font-size: 24px;
+    font-weight: 200; /* Light weight */
+    margin-bottom: 16px;
 }
 
-.home-image img {
-  width: 100%; /* Make image take up full width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space under the image */
+.start-tour {
+    width: 100vw;
+    height: 54vh;
+    position: relative; /* Allows positioning of child elements relative to this container */
+    overflow: hidden; /* Ensures content stays inside the container */
+    z-index: -2;
 }
 
+.background-image {
+    width: 100%; /* Stretch to the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Makes it a true background */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures it's behind the button and other content */
+}
+
+.view-agenda-button {
+    position: absolute; /* Places the button relative to the container */
+    bottom: 32px; /* Ensures it is always 32px from the bottom of the container */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Aligns it perfectly in the center */
+    z-index: 1; /* Ensures the button is above the background image */
+}
+
+.image-credit{
+    color: #828282;
+    font-weight: 200;
+    text-align: end;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.title-header-area{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+.title-section {
+    float: left;
+    width: 75%;
+    font-size: 20px;
+    font-weight: 200;
+}
   
+.more-section {
+    float: left;
+    width: 25%;
+    text-align: end;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.additional-link{
+    color: black;
+    font-weight: 200;
+    font-size: 14px;
+}
