@@ -1,0 +1,107 @@
+/* Slideshow Container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  /* Add borders only on top and bottom */
+  border-top: 0.5px solid #B5B5B5;
+  border-bottom: 0.5px solid #B5B5B5;
+  /* Remove all other borders */
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+
+/* Slide */
+.slide {
+  display: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeEffect 1s;
+}
+
+.slide-content {
+  flex: 1;
+  margin-right: 12px;
+}
+
+.slideshow-desc {
+  font-size: 14px;
+  color: #5C5C5C;
+  line-height: 20px;
+  /* Multi-line text truncation */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; /* 3 lines x line-height (1.5em) */
+  margin-bottom: 8px;
+}
+
+
+.read-more {
+  font-size: 14px;
+  color: black;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.slide-image {
+  flex: 1;
+  text-align: right;
+}
+
+.slide-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0px;
+}
+
+/* Navigation Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin: 0 6px;
+  background-color: #B2B2B2;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+.slideshow-padding-container{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.slideshow-title{
+    font-weight: 200;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 12px;
+}
+
+/* Fade Animation */
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
