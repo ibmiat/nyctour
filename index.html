@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/agenda.css">
     <link rel="stylesheet" href="styles/mapstyle.css">
     <link rel="stylesheet" href="styles/catalogue.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/fonts.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
 
-    <title>NRF Safari</title>
+    <title>NYC NRF</title>
 </head>
 <body>
 
@@ -30,7 +32,7 @@
                     <button id="menu-button">Menu</button>
                 </div>
                 <div class="logoIC column50">
-                    <a class="landing-link" href="index.html">NYC Safari</a>
+                    <a class="landing-link" href="index.html">NYC NRF</a>
                 </div>
             </div>
         </div>
@@ -49,7 +51,7 @@
                             </button>
                         </div>
                         <div class="logoIC column50">
-                            <a class="landing-link-menu" href="index.html">NYC Safari</a>
+                            <a class="landing-link-menu" href="index.html">NYC NRF</a>
                         </div>
                     </div>
                 </div>
@@ -57,9 +59,11 @@
                 <div class="menu-header-area">MENU</div>
     
                 <ul>
-                    <li class="menu-item menu-top-border"><a href="Agenda/agenda.html">AGENDA</a></li>
-                    <li class="menu-item"><a href="map.html">MAP</a></li>
-                    <li class="menu-item"><a href="catalogue.html">STORE CATALOGUE</a></li>
+                    <li class="menu-item menu-top-border"><a href="Agenda/agenda.html">Agenda</a></li>
+                    <li class="menu-item menu-top-border"><a href="index.html">Research & Insights</a></li>
+                    <li class="menu-item"><a href="catalogue.html">New York Stores to Visit</a></li>
+                    <li class="menu-item"><a href="map.html">Map</a></li>
+                    <li class="menu-item"><a href="index.html">The IBM Team</a></li>
                 </ul>
     
             </div>
@@ -81,7 +85,7 @@
 
     <div class="start-tour">
         <img src="IMG/homecover.jpg" alt="Background" class="background-image" />
-        <a href="Agenda/agenda.html" target="_blank" class="view-agenda-button sec-button dir-link">
+        <a href="Agenda/agenda.html" class="view-agenda-button sec-button dir-link">
             View Agenda
         </a>
     </div>
@@ -94,6 +98,71 @@
         <div class="row">
             <div class="title-section">
                 Featured Articles
+            </div>
+            <div class="more-section">
+                <a href="index.html" target="_blank" class="additional-link">
+                    More
+                </a>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="slideshow-padding-container">
+        <div class="slideshow-container" id="slideshow">
+            <!-- Slide 1 -->
+            <div class="slide fade">
+              <div class="slide-content">
+                <div class="slideshow-title">Data Insights</div>
+                <div class="slideshow-desc garamond-light">The IBM Institute for Business Value uses data-driven research and expert analysis.</div>
+                <a href="index.html" class="read-more">Read more</a>
+              </div>
+              <div class="slide-image">
+                <img src="coverIMG/sample.jpg" alt="IBM Institute Image">
+              </div>
+            </div>
+        
+            <!-- Slide 2 -->
+            <div class="slide fade">
+              <div class="slide-content">
+                <div class="slideshow-title">Data Insights</div>
+                <div class="slideshow-desc garamond-light">Leveraging insights and trends to make better business decisions across industries.</div>
+                <a href="index.html" class="read-more">Read more</a>
+              </div>
+              <div class="slide-image">
+                <img src="coverIMG/sample.jpg" alt="IBM Institute Image">
+              </div>
+            </div>
+        
+            <!-- Slide 3 -->
+            <div class="slide fade">
+              <div class="slide-content">
+                <div class="slideshow-title">Data Insights</div>
+                <div class="slideshow-desc garamond-light">Explore the future of artificial intelligence and its role in transforming businesses.</div>
+                <a href="index.html" class="read-more">Read more</a>
+              </div>
+              <div class="slide-image">
+                <img src="coverIMG/sample.jpg" alt="IBM Institute Image">
+              </div>
+            </div>
+          </div>
+        
+          <!-- Dots for navigation -->
+          <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </div>
+
+    <script src="JS/slideshow.js"></script>
+
+
+
+    <div class="title-header-area">
+        <div class="row">
+            <div class="title-section">
+                Places to Visit
             </div>
             <div class="more-section">
                 <a href="index.html" target="_blank" class="additional-link">
