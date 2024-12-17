@@ -127,7 +127,7 @@ body.fade-out {
 .menu-header-area {
     width: 100vw;
     text-align: center;
-    padding-top: 14vh;
+    padding-top: 8vh;
     padding-bottom: 14vh;
     font-size: 18px;
     color: white;
@@ -176,8 +176,8 @@ body.fade-out {
     border-bottom: 0.5px solid #B2B2B2; /* Bottom border */
     font-size: 14px;
     color: #404241;
-    letter-spacing: 0.9px;
-    word-spacing:4px;
+    letter-spacing: 0.4px;
+    word-spacing:2px;
     font-family: 'Public Sans', sans-serif;
     font-weight: 300; /* Light weight */
 }
@@ -276,7 +276,7 @@ h3{
 .home-title {
     max-width: 80vw; /* or set a specific width, e.g., 300px */
     overflow-wrap: break-word; /* Ensure text wraps if it overflows */
-    padding-bottom: 24px;
+    padding-bottom: 12px;
 }
   
 .nrf-guide {
@@ -308,7 +308,7 @@ h3{
     height: 54vh;
     position: relative; /* Allows positioning of child elements relative to this container */
     overflow: hidden; /* Ensures content stays inside the container */
-    z-index: -2;
+    z-index: 0;
 }
 
 .background-image {
@@ -325,7 +325,7 @@ h3{
     bottom: 32px; /* Ensures it is always 32px from the bottom of the container */
     left: 50%; /* Centers the button horizontally */
     transform: translateX(-50%); /* Aligns it perfectly in the center */
-    z-index: 1; /* Ensures the button is above the background image */
+    z-index: 10; /* Ensures the button is above the background image */
 }
 
 .image-credit{
