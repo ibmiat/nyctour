@@ -209,3 +209,54 @@
     padding-right: 4px;
     font-weight: 200;
 }
+
+.collapsible {
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+    margin-top: 24px;
+    font-family: 'Public Sans', sans-serif; /* Consistent font */
+    letter-spacing: 0.3px;
+    font-weight: 400; /* Semi-weight */
+    line-height: 1; /* Avoids extra vertical spacing */
+}
+
+.active, .collapsible:hover {
+    background-color: white;
+}
+
+.other-events {
+    padding: 0px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.event-tag {
+    display: block; /* Ensures it is on its own line */
+    width: fit-content; /* Width depends on the content */
+    border: 1px solid black;
+    border-radius: 2px;
+    color: black;
+    font-size: 8px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.Recommended{
+    padding-bottom: 12px;
+    font-weight: 200;
+    font-size: 14px;
+}
