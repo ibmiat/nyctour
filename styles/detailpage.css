@@ -152,8 +152,8 @@
     font-weight: 300; /* Light weight */
     padding-right: 16px;
     padding-left: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 14px;
     z-index: 1000; /* Ensure the footer is always above other content */
   }
