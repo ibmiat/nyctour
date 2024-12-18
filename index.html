@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/agenda.css">
-    <link rel="stylesheet" href="styles/mapstyle.css">
+    <link rel="stylesheet" href="Map/minimap.css">
     <link rel="stylesheet" href="styles/catalogue.css">
     <link rel="stylesheet" href="styles/slideshow.css">
     <link rel="stylesheet" href="styles/fonts.css">
@@ -18,6 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <title>NYC NRF</title>
 </head>
@@ -100,7 +105,7 @@
                 Featured Articles
             </div>
             <div class="more-section">
-                <a href="index.html" target="_blank" class="additional-link">
+                <a href="index.html" class="additional-link">
                     More
                 </a>
             </div>
@@ -165,17 +170,143 @@
                 Places to Visit
             </div>
             <div class="more-section">
-                <a href="index.html" target="_blank" class="additional-link">
+                <a href="map.html" class="additional-link">
                     More
                 </a>
             </div>
           </div>
     </div>
+
+
+
+  <!--MAP Container-->
+
+  <div id="map" class="map-container"></div>
+
+  <!-- Store Pop Up: Store 1 -->
+  <div class="popup" id="popup1">
+    <div class="row">
+        <div class="store-map-details">
+            <!-- Store name -->
+            <div class="cat-store-name">
+                <a href="Stores/store1.html" class="catalogue-link">
+                    <div class="catalogue-title-section margin-bottom-8">
+                        <span class="number">01</span> 
+                        <span class="divider">|</span> 
+                        <span class="brand">Store Name 1</span>
+                    </div>
+                </a>  
+            </div>
+            <!-- Article quote -->
+            <div class="cat-store-theme garamond-normal padding-top-8">
+                App driven, Service based, Technology App driven, Service based, Technology App driven, Service based, Technology
+            </div>
+        </div>
+        <div class="store-arrow-area">
+            <!-- Clickable Arrow -->
+            <button id="closeButton1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="button-directional-container">
+        <a href="Stores/store1.html" class="directional-button secondary-button dir-link">
+            Get direction
+        </a>
+        <a href="Stores/store1.html" class="directional-button primary-button dir-link">
+            Read more
+        </a>
+    </div>
+</div>
+
+<!-- Store Pop Up: Store 2 -->
+<div class="popup" id="popup2">
+    <div class="row">
+        <div class="store-map-details">
+            <!-- Store name -->
+            <div class="cat-store-name">
+                <a href="Stores/store1.html" class="catalogue-link">
+                    <div class="catalogue-title-section margin-bottom-8">
+                        <span class="number">02</span> 
+                        <span class="divider">|</span> 
+                        <span class="brand">Store Name 2</span>
+                    </div>
+                </a>  
+            </div>
+            <!-- Article quote -->
+            <div class="cat-store-theme garamond-normal padding-top-8">
+                App driven, Service based, Technology App driven, Service based, Technology App driven, Service based, Technology
+            </div>
+        </div>
+        <div class="store-arrow-area">
+            <!-- Clickable Arrow -->
+            <button id="closeButton2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="button-directional-container">
+        <a href="https://www.example.com" target="_blank" class="directional-button secondary-button dir-link">
+            Get directions
+        </a>
+        <a href="Stores/store1.html" class="directional-button primary-button dir-link">
+            Read more
+        </a>
+    </div>
+</div>
+
+
+<!-- Store Pop Up: Store 3 -->
+<div class="popup" id="popup3">
+    <div class="row">
+        <div class="store-map-details">
+            <!-- Store name -->
+            <div class="cat-store-name">
+                <a href="Stores/store1.html" class="catalogue-link">
+                    <div class="catalogue-title-section margin-bottom-8">
+                        <span class="number">03</span> 
+                        <span class="divider">|</span> 
+                        <span class="brand">Store Name 3</span>
+                    </div>
+                </a>  
+            </div>
+            <!-- Article quote -->
+            <div class="cat-store-theme garamond-normal padding-top-8">
+                App driven, Service based, Technology App driven, Service based, Technology App driven, Service based, Technology
+            </div>
+        </div>
+        <div class="store-arrow-area">
+            <!-- Clickable Arrow -->
+            <button id="closeButton3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="gray" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="button-directional-container">
+        <a href="https://www.example.com" target="_blank" class="directional-button secondary-button dir-link">
+            Get directions
+        </a>
+        <a href="Stores/store1.html" class="directional-button primary-button dir-link">
+            Read more
+        </a>
+    </div>
+</div>
+
+    <div class="footer">IBM | National Retail Federation</div>
+
+
     
 
-    <br><br><br><br>
-    
-
+  <script src="Map/minimap.js"></script>
   <script src="script.js"></script>
 
 
