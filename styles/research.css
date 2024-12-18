@@ -1,0 +1,24 @@
+.research-header{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 56px;
+    padding-bottom: 18px;
+}
+
+.case-study {
+    float: left;
+    width: 100%;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: space-between; /* Pushes the 'Read more' link to the bottom */
+    height: 100%; /* Ensures the container takes up the full height of the row */
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.research-title {
+    font-weight: 200;
+    font-size: 16px;
+    color: black;
+    padding-bottom: 12px;
+}
