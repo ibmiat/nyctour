@@ -1,0 +1,41 @@
+.profile {
+    float: left;
+    width: 40%;
+    position: relative; /* Ensures proper image placement */
+    padding-right: 8px;
+}
+
+.about-profile {
+    float: left;
+    width: 60%;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: space-between; /* Pushes the 'Read more' link to the bottom */
+    height: 100%; /* Ensures the container takes up the full height of the row */
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.linkedin-link {
+    margin-top: 16px;
+    font-size: 14px;
+    color: black;
+}
+  
+.linkedin-link:hover {
+    text-decoration: underline;
+}
+
+.profile-image {
+    width: 100%; /* Makes the image take the full width of the profile div */
+    height: auto; /* Keeps the aspect ratio intact */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    display: block; /* Removes any unwanted space below the image */
+}
+
+.team-container {
+    border-bottom: 0.5px solid #B5B5B5;
+    padding: 22px 12px 22px 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
