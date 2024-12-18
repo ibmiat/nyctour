@@ -68,17 +68,17 @@
     letter-spacing: 0.4px;
     color: black;
     font-weight: 200;
-    line-height: 26px;
+    line-height: 20px;
     width: 80%;
 }
 
 .agenda-date-time-section {
-    font-family: 'Public Sans', sans-serif; /* Set the desired font */
-    display: flex;
-    align-items: center; /* Align text vertically */
-    font-size: 14px; /* Adjust font size to match the design */ 
+    font-family: 'Public Sans', sans-serif; /* Use Public Sans */
+    display: inline; /* Inline flow ensures wrapping only for content */
+    font-size: 14px; /* Match the font size */
+    line-height: 1.4; /* Improve spacing */
+    white-space: normal; /* Allow wrapping */
 }
-
 
 .margin-bottom-12{
     margin-bottom: 12px;
@@ -89,20 +89,16 @@
     margin-right: 8px; /* Spacing between number and divider */
 }
 
-.agenda-date-time-section .number2 {
-    font-weight: 400; /* Bold for "01" */
-    margin-right: 8px; /* Spacing between number and divider */
-}
-
-
+.agenda-date-time-section .number2,
 .agenda-date-time-section .divider {
-    font-weight: 200; /* Light font for the "|" */
-    margin-right: 8px; /* Spacing between divider and brand name */
+    display: inline; /* Ensure these stay on the same line */
+    white-space: nowrap; /* Prevent these from wrapping */
 }
 
 .agenda-date-time-section .brand {
-    font-weight: 200; /* Light font for "Glossier" */
-    color: #5C5C5C;
+    display: inline; /* Allow inline wrapping only for this content */
+    font-weight: 200; /* Light font */
+    color: #5C5C5C; /* Gray color */
 }
 
 .free-line-spacing{
