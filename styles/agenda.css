@@ -47,20 +47,21 @@
     letter-spacing: 0.2px;
     color: inherit; /* Inherit the color from parent unless overridden */
     font-family: 'Public Sans', sans-serif; /* Optional: Set a specific font */
-    font-size: 14px;
-    color: #5C5C5C;
+    font-size: 12px;
+    color: black;
 }
 
 .calendar-link:visited {
-    color: #5C5C5C; /* Change color to pink after the link is visited */
+    color: black; /* Change color to pink after the link is visited */
 }
 
 .calendar-link:active {
-    color: #5C5C5C; /* Change color to pink when the link is active (being clicked) */
+    color: black; /* Change color to pink when the link is active (being clicked) */
 }
 
 .add-to-cal{
     padding-top: 8px;
+    text-align: right;
 }
 
 .agenda-desc{
@@ -68,8 +69,9 @@
     letter-spacing: 0.4px;
     color: black;
     font-weight: 200;
-    line-height: 20px;
+    line-height: 24px;
     width: 80%;
+    padding-top: 12px;
 }
 
 .agenda-date-time-section {
@@ -128,6 +130,12 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+.agenda-cat-details-full {
+    float: left;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 .agenda-date-theme{
     font-size: 16px;
@@ -196,4 +204,8 @@
     color: black;
     line-height: 1; /* Avoids extra vertical spacing */
 }
-
+.item-divider{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: 200;
+}
