@@ -42,13 +42,18 @@
     margin-bottom: 10px;  /* Add margin to the bottom */
 }
 
-.cat-store-theme{
+.cat-store-theme {
     font-size: 14px;
     letter-spacing: 0.4px;
     line-height: 20px;
     color: #515151;
     width: 85%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits text to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Hides the overflow text */
 }
+
 
 .store-arrow-area {
     float: left;
@@ -113,4 +118,13 @@
 
 .catalogue-link:hover {
     text-decoration: none; /* Prevent underline on hover */
+}
+
+.cat-tag-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to a new line */
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: center;
+    gap: 8px; /* Adds space between the tags */
+    margin-top: 16px;
 }
