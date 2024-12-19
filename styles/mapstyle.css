@@ -34,7 +34,7 @@
 
 .popup button {
     padding: 5px;
-    background-color: #007bff;
+    background-color: white;
     color: white;
     border: none;
     border-radius: 3px;
@@ -42,7 +42,7 @@
 }
 
 .popup button:hover {
-    background-color: #0056b3;
+    background-color: white;
 }
 
 .popup-store-col {
@@ -114,4 +114,21 @@
     width: calc(100% - 18px);
     padding-top: 20px;
   }
+
+
+
+.desc-store-theme{
+    max-height: calc(1.5em * 3); /* 1.5em (line height) multiplied by 3 lines */
+    overflow: hidden; /* Hide extra text */
+    display: -webkit-box; /* Flexbox for webkit browsers */
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical; /* Necessary for line-clamp to work */
+    text-overflow: ellipsis; /* Add ellipsis at the end */
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 20px;
+    color: #515151;
+    width: 85%;
+}
+
   
