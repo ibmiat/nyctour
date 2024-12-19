@@ -28,7 +28,7 @@
 
 .agenda-image {
     width: 100vw; /* Full screen width */
-    height: 24vh; /* Set height to 24% of the viewport height */
+    height: 20vh; /* Set height to 24% of the viewport height */
     background-color: pink; /* Optional placeholder color */
     margin-bottom: 18px; /* Spacing below the image area */
     overflow: hidden; /* Hide parts of the image that exceed the height */
