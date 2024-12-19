@@ -69,7 +69,7 @@
     flex-wrap: wrap; /* Allows wrapping to a new line */
     justify-content: flex-start; /* Aligns items to the left */
     align-items: center;
-    gap: 12px; /* Adds space between the tags */
+    gap: 10px; /* Adds space between the tags */
     padding-right: 12px;
     padding-left: 12px;
   }
@@ -80,12 +80,12 @@
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 6px 16px;
+    padding: 8px 8px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     white-space: nowrap; /* Ensures the text inside each tag stays on one line */
-    transition: transform 0.2s, background-color 0.3s;
+    text-transform: uppercase;
   }
   
   /* Hover effect */
