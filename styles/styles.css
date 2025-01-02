@@ -7,18 +7,8 @@ body, h1, ul, li, a, button {
 }
 
 body {
-    opacity: 0; /* Start fully transparent */
-    transition: opacity 0.6s ease-in-out; /* Smooth transition */
+    opacity: 1;
 }
-
-body.fade-in {
-    opacity: 1; /* Fully visible */
-}
-
-body.fade-out {
-    opacity: 0; /* Fade out on navigation */
-}
-
 
 /* Fixed header navigation */
 .header-navigation {
@@ -128,7 +118,7 @@ body.fade-out {
     width: 100vw;
     text-align: center;
     padding-top: 8vh;
-    padding-bottom: 14vh;
+    padding-bottom: 10vh;
     font-size: 18px;
     color: white;
     font-family: 'Public Sans', sans-serif;  /* Use Public Sans */
