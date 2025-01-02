@@ -1,0 +1,13 @@
+.booth-image-img {
+    width: 100%; /* Ensure the image spans the full width of the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Removes extra spacing below the image */
+}
+
+.booth-info{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    line-height: 24px;
+}
