@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/loader.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/agenda.css">
@@ -15,92 +16,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-
 
     <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@latest/ol.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    
     <title>NYC NRF</title>
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="IMG/ibmlogo.png" alt="Loading Icon">
+    </div>
 
-
-
-        <!--Header-->
-        <div class="header-navigation header-navigation-light">
-            <div class="row">
-                <div class="column50">
-                    <button id="menu-button">Menu</button>
-                </div>
-                <div class="logoIC column50">
-                    <a class="landing-link" href="index.html">NYC NRF</a>
-                </div>
+    <!--Header-->
+    <div class="header-navigation header-navigation-light">
+        <div class="row">
+            <div class="column50">
+                <button id="menu-button">Menu</button>
+            </div>
+            <div class="logoIC column50">
+                <a class="landing-link" href="index.html">NYC NRF</a>
             </div>
         </div>
+    </div>
     
-        <!--Menu Content-->
-        <div id="full-screen-menu" class="hidden">
-            <div class="menu-content">
-    
-                <div class="header-navigation header-navigation-dark">
-                    <div class="row">
-                        <div class="column50">
-                            <button id="close-button">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                                  <path d="M6 18L18 6M6 6l12 12"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="logoIC column50">
-                            <a class="landing-link-menu" href="index.html">NYC NRF</a>
-                        </div>
+    <!--Menu Content-->
+    <div id="full-screen-menu" class="hidden">
+        <div class="menu-content">
+            <div class="header-navigation header-navigation-dark">
+                <div class="row">
+                    <div class="column50">
+                        <button id="close-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="logoIC column50">
+                        <a class="landing-link-menu" href="index.html">NYC NRF</a>
                     </div>
                 </div>
-                
-                <div class="menu-header-area">MENU</div>
-    
-                <ul>
-                    <li class="menu-item menu-top-border"><a href="Agenda/agenda.html">Your IBM Agenda</a></li>
-                    <li class="menu-item"><a href="IBMbooth.html">Find the IBM Booth</a></li>
-                    <li class="menu-item"><a href="research.html">Research & Insights</a></li>
-                    <li class="menu-item"><a href="catalogue.html">New York Stores to Visit</a></li>
-                    <li class="menu-item"><a href="map.html">Map</a></li>
-                    <li class="menu-item"><a href="team.html">The IBM Team</a></li>
-                </ul>
-    
             </div>
+            
+            <div class="menu-header-area">MENU</div>
+
+            <ul>
+                <li class="menu-item menu-top-border"><a href="Agenda/agenda.html">Your IBM Agenda</a></li>
+                <li class="menu-item"><a href="IBMbooth.html">Find the IBM Booth</a></li>
+                <li class="menu-item"><a href="research.html">Research & Insights</a></li>
+                <li class="menu-item"><a href="catalogue.html">New York Stores to Visit</a></li>
+                <li class="menu-item"><a href="map.html">Map</a></li>
+                <li class="menu-item"><a href="team.html">The IBM Team</a></li>
+            </ul>
         </div>
-    
-
-
+    </div>
 
     <!--Body Content-->
-
     <div class="content-header">IBM Booth</div>
-
     <img class="booth-image-img" src="IMG/glossier.jpg" alt="Agenda Cover">
-
-    
-
     <div class="booth-info">
         IBM booth number 4639,
         <br>
         Javits Center
     </div>
-
     <div class="global-footer">IBM | National Retail Federation</div>
-    
 
-    
-
-  <script src="JS/map.js"></script>
-  <script src="script.js"></script>
-
-
+    <script src="JS/loader.js"></script>
+    <script src="JS/map.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
