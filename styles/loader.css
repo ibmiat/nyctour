@@ -21,7 +21,7 @@
 #loading-screen img {
     width: 50px;
     height: auto;
-    animation: bounce 1s infinite;
+    animation: bounce 2.2s infinite;
 }
 @keyframes bounce {
     0%, 100% {
