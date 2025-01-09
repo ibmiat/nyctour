@@ -28,7 +28,11 @@ const markers = [
     { lon: -74.0020, lat: 40.7228, icon: 'SVG/marker1.svg', name: 'Reformation' },
     { lon: -73.9986, lat: 40.7228, icon: 'SVG/marker1.svg', name: 'Zara' },
     { lon: -73.9989, lat: 40.7224, icon: 'SVG/marker1.svg', name: 'Glossier' },
-    { lon: -73.9982, lat: 40.7273, icon: 'SVG/marker1.svg', name: 'Grocer' }
+    { lon: -73.9982, lat: 40.7273, icon: 'SVG/marker1.svg', name: 'Grocer' },
+    { lon: -74.0025, lat: 40.7575, icon: 'SVG/marker1.svg', name: 'Javits Centre' },
+    { lon: -73.9844, lat: 40.7740, icon: 'SVG/marker1.svg', name: 'Tavern On the Green' },
+    { lon: -73.9763, lat: 40.7636, icon: 'SVG/marker1.svg', name: 'Nobu' },
+    { lon: -73.9877, lat: 40.7415, icon: 'SVG/marker1.svg', name: 'IBM One Madison Avenue' }
 ];
 
 // Create features for each marker
@@ -75,6 +79,10 @@ function closeAllPopups() {
     document.getElementById('popup6').style.display = 'none';
     document.getElementById('popup7').style.display = 'none';
     document.getElementById('popup8').style.display = 'none';
+    document.getElementById('popup9').style.display = 'none';
+    document.getElementById('popup10').style.display = 'none';
+    document.getElementById('popup11').style.display = 'none';
+    document.getElementById('popup12').style.display = 'none';
 }
 
 // Function to move map to Soho area
@@ -152,6 +160,26 @@ map.on('singleclick', function (event) {
             const popupElement = document.getElementById('popup8');
             popupElement.style.display = 'block';
         }
+
+        if (clickedMarker && clickedMarker.name === 'Javits Centre') {
+            const popupElement = document.getElementById('popup9');
+            popupElement.style.display = 'block';
+        }
+
+        if (clickedMarker && clickedMarker.name === 'Tavern On the Green') {
+            const popupElement = document.getElementById('popup10');
+            popupElement.style.display = 'block';
+        }
+
+        if (clickedMarker && clickedMarker.name === 'Nobu') {
+            const popupElement = document.getElementById('popup11');
+            popupElement.style.display = 'block';
+        }
+
+        if (clickedMarker && clickedMarker.name === 'IBM One Madison Avenue') {
+            const popupElement = document.getElementById('popup12');
+            popupElement.style.display = 'block';
+        }
     }
 });
 
@@ -179,4 +207,16 @@ document.getElementById('closeButton7').onclick = function () {
 };
 document.getElementById('closeButton8').onclick = function () {
     document.getElementById('popup8').style.display = 'none';
+};
+document.getElementById('closeButton9').onclick = function () {
+    document.getElementById('popup9').style.display = 'none';
+};
+document.getElementById('closeButton10').onclick = function () {
+    document.getElementById('popup10').style.display = 'none';
+};
+document.getElementById('closeButton11').onclick = function () {
+    document.getElementById('popup11').style.display = 'none';
+};
+document.getElementById('closeButton12').onclick = function () {
+    document.getElementById('popup12').style.display = 'none';
 };
