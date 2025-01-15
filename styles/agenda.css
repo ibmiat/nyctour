@@ -29,7 +29,7 @@
 .agenda-image {
     width: 100vw; /* Full screen width */
     height: 20vh; /* Set height to 24% of the viewport height */
-    background-color: pink; /* Optional placeholder color */
+    background-color: whitesmoke; /* Optional placeholder color */
     margin-bottom: 18px; /* Spacing below the image area */
     overflow: hidden; /* Hide parts of the image that exceed the height */
 }
@@ -52,11 +52,11 @@
 }
 
 .calendar-link:visited {
-    color: black; /* Change color to pink after the link is visited */
+    color: black; 
 }
 
 .calendar-link:active {
-    color: black; /* Change color to pink when the link is active (being clicked) */
+    color: black; 
 }
 
 .add-to-cal{
@@ -67,11 +67,21 @@
 .agenda-desc{
     font-size: 16px;
     letter-spacing: 0.4px;
-    color: black;
     font-weight: 200;
     line-height: 24px;
-    width: 80%;
+    width: 90%;
     padding-top: 12px;
+}
+
+.agenda-desc2{
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: rgb(65, 65, 65);
+    font-weight: 200;
+    line-height: 24px;
+    width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .agenda-date-time-section {
